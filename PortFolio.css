@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f0e7e7;
+    color: #0e0d0d;
+    border: #0e0d0d;
+    padding: 20px;
+  }
+  
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: burlywood;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  footer {
+    background-color: #b4b9f1;
+    color: #060606;
+    padding: 10px;
+  }
+  
+  
+  #home img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    background-color: rgb(209, 156, 210);
+    padding: 10px;
+  }
+
+  #Bio{
+    background-color: #b8bce1;
+    color: #060606;
+    padding: 10px;
+  }
+  
+#Bio {
+    padding: 20px;
+  }
+  
+  #skills {
+    padding: 20px;
+        background-color: rgb(241, 128, 245);
+        padding: 10px;    
+  }
+  
+  #skills ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #skills li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  #skills li progress {
+    vertical-align: middle;
+    width: 100px;
+    height: 20px;
+  }
+  #Certifications{
+    background-color: rgb(41, 171, 188);
+    padding: 10px;
+  }
+  li{
+    display: inline;
+    margin-right:15px ;
+  }
+
+  
+  #contact {
+    padding: 20px;
+    background-color: #faedac;
+    color: #060606;
+    padding: 10px;
+  }
+  
+  #contact p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
