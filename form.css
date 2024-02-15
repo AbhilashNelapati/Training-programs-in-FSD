@@ -1,0 +1,24 @@
+*{
+body{
+    text-align: right;
+    background-image: url(R.jpeg);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:-4px 0px ;
+}
+
+form{
+    background-color: rgb(186, 232, 35);
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 5px solid #050505;
+    box-sizing: border-box;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+}
