@@ -1,46 +1,62 @@
-let firstNumber="";
-let secoundNumber="";
+let firstnumber="";
+let secondnumber="";
 let operator="";
 
+
 function appendNumber(num){
-    if(operator==""){
-        firstNumber +=num;
-        document.getElementById("result").value=firstNumber;
+    if(operator===""){
+        firstnumber+=num;
+        document.getElementById("result").value=firstnumber;
     }
     else{
-        secoundNumber +=num;
-        document.getElementById("result").value=firstNumber + "" + operator + "" + secoundNumber;
+        secondnumber+=num;
+        document.getElementById("result").value=firstnumber+""+operator+""+ secondnumber;
     }
 }
+
 function setoperator(op){
     operator=op;
-    document.getElementById("result").value=firstNumber+""+operator;
-
+    document.getElementById("result").value=firstnumber+""+operator;
 }
+
+function back() {
+    if (secondnumber !== "") {
+        secondnumber = secondnumber.slice(0, -1);
+        document.getElementById("result").value = firstnumber + operator + secondnumber;
+    } else if (operator !== "") {
+        operator = "";
+        document.getElementById("result").value = firstnumber;
+    } else if (firstnumber !== "") {
+        firstnumber = firstnumber.slice(0, -1);
+        document.getElementById("result").value = firstnumber;
+    }
+}
+
 
 function calculate(){
     let result;
     switch(operator){
         case '+':
-            result=parseInt(firstNumber)+parseInt(secoundNumber);
+            result=parseFloat(firstnumber)+parseFloat(secondnumber);
             break;
         case '-':
-            result=parseInt(firstNumber)-parseInt(secoundNumber);
+            result=parseFloat(firstnumber)-parseFloat(secondnumber);
             break;
         case '*':
-            result=parseInt(firstNumber)*parseInt(secoundNumber);
+            result=parseFloat(firstnumber)*parseFloat(secondnumber);
             break;
         case '/':
-            result=parseInt(firstNumber)/parseInt(secoundNumber);
-            break;                        
+            result=parseFloat(firstnumber)/parseFloat(secondnumber);
+            break;
+        
     }
     document.getElementById("result").value=result;
 }
 
-function clearresult(){
-    firstNumber="";
-    secoundNumber="";
-    operator="";
-    document.getElementById("result").value="";
 
+function clearresult() {
+    firstnumber = "";
+    secondnumber = "";
+    operator = "";
+    document.getElementById("result").value = "";
 }
