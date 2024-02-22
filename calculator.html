@@ -45,7 +45,7 @@
         .box{
             border: 10px solid #2d354a;
             width: 290px;
-            height: 380px;
+            height: 420px;
             position: fixed;
             border-radius: 10px;
             left: 38%;
@@ -59,7 +59,7 @@
        }
        table > td{
         width:50px;
-        height: 50px;
+        height: 70px;
         border-radius: 60px;
         font-size: 20px;
         border:none;
@@ -98,6 +98,12 @@
 
     <table>
         <tr>
+            <td><button onclick="clearresult('c')">c</button></td>
+            <td><button onclick="back()">Del</button></td>
+            <td><button onclick="setoperator('%')">%</button></td>
+            <td><button onclick="setoperator('/')">/</button></td>
+        </tr>
+        <tr>
             <td><button onclick="appendNumber(7)">7</button></td>
             <td><button onclick="appendNumber(8)">8</button></td>
             <td><button onclick="appendNumber(9)">9</button></td>
@@ -116,10 +122,10 @@
             <td><button onclick="setoperator('*')">*</button></td>
         </tr>
         <tr>
+            <td><button onclick="appendNumber(0o0)">00</button></td>
             <td><button onclick="appendNumber(0)">0</button></td>
-            <td><button onclick="clearresult('c')">c</button></td>
+            <td><button onclick="setoperator('.')">.</button></td>
             <td><button onclick="calculate('=')">=</button></td>
-            <td><button onclick="setoperator('/')">/</button></td>
         </tr>
     </table>
 </div>
