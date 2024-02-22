@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <div class="box">
+    <div class="subbox">
+    <h2><u>CALCULATOR</u></h2>
+    <input type="text" id="result" readonly><br>
+    <br>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+        body{
+            background-color: #2d354a;
+            font-family: dosis,sans-serif;
+        }
+        h2{
+            font-size: 20px;
+            top:13%;
+            left:45%;
+            color:white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: inter,sans-serif;
+
+        }
+        input{
+            background: #caccce;
+            width:230px;
+            padding:10px;
+            margin:10px 0%;
+            border-radius: 5px;
+            font-size: 20px;
+            font-family: comic neue,cursive;
+            border:none;
+            font-weight: bolder;
+        }
+        .box{
+            border: 10px solid #2d354a;
+            width: 290px;
+            height: 380px;
+            position: fixed;
+            border-radius: 10px;
+            left: 38%;
+            top:10%;
+            box-shadow: 2px 4px 20px;
+            background: #2d354a;
+
+        }
+       .subbox{
+        margin:35px 7%;
+       }
+       table > td{
+        width:50px;
+        height: 50px;
+        border-radius: 60px;
+        font-size: 20px;
+        border:none;
+        border-bottom: none;
+        box-shadow:5px 0px 8px 2px #191919;
+        background: white;
+        color: #2d354a;
+        cursor: pointer;
+        font-family: comic neue,cursive;
+        font-weight: bolder;
+        outline:none;
+       }
+       button{
+        justify-content: space-between;
+        width:60px;
+        height: 50px;
+        border-radius: 80px;
+        font-size: 20px;
+        border:none;
+        border-bottom: none;
+        box-shadow:5px 0px 8px 2px #191919;
+        background: white;
+        color: #2d354a;
+        cursor: pointer;
+        font-family: comic neue,cursive;
+        font-weight: bolder;
+        outline:none;
+        margin: 1.25px;
+       }
+       table > td > symbol > setoperator{
+        background: #1376da;
+       }
+
+
+    </style>
+
+    <table>
+        <tr>
+            <td><button onclick="appendNumber(7)">7</button></td>
+            <td><button onclick="appendNumber(8)">8</button></td>
+            <td><button onclick="appendNumber(9)">9</button></td>
+            <td><button onclick="setoperator('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendNumber(6)">6</button></td>
+            <td><button onclick="appendNumber(5)">5</button></td>
+            <td><button onclick="appendNumber(4)">4</button></td>
+            <td><button onclick="setoperator('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendNumber(1)">1</button></td>
+            <td><button onclick="appendNumber(2)">2</button></td>
+            <td><button onclick="appendNumber(3)">3</button></td>
+            <td><button onclick="setoperator('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendNumber(0)">0</button></td>
+            <td><button onclick="clearresult('c')">c</button></td>
+            <td><button onclick="calculate('=')">=</button></td>
+            <td><button onclick="setoperator('/')">/</button></td>
+        </tr>
+    </table>
+</div>
+</center>
+</body>
+<script src="java.js"></script>
+</html>
