@@ -2,70 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="PortFolio.css">
 </head>
-
-<body >
-    <header>
-        <h2>MY PORTFOLIO</h2>
-        <nav>
-        <ul>
-            <li><a href="home">home</a></li>
-            <li><a href="Bio">Bio</a></li>
-            <li><a href="PORTFOLIO">PORTFOLIO</a></li>
-            <li><a href="#skills">skills</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>
-        </nav>
-    </header>
-    <main>
-            <sections id="home">
-                <h2>ABHILASH</h2>
-                <p>I Love My FEELINGS</p>
-
-                <img src="Abhi.jpeg" width="550px" height="450px">
-            </sections>
-            <section id="Bio">
-                <h2>About</h2>
-                <pre>I am a cse student in swarnandhra college <br>
-                    i'm interseted in computer languages , and mostly passion into the mobile vedio editing ( basic editings )<br>
-                    every day i try to bulid my skills on programing languages<br > 
-                    present i intersted to learning the fullstack with the web development
-
-                </pre>
-
-            </section>
-            <section id="PORTFOLIO"></section>
-            <section id="skills">
-                <h2>Technical skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li><progress value="90" max="100"></progress></li>
-                    <li>CSS</li>
-                    <li><progress value="90" max="100"></progress></li>
-                    <li>JavaScript</li>
-                    <li><progress value="90" max="100"></progress></li>
-                    <li></li>
-                </ul>
-            </section>
-            <section id="Certifications">
-            <h2>Certifications</h2>
-            <p><b>CISCO</b> :- cyber security Essentials</bCISCO></p>
-            <p><b>AWS CLOUD</b> :- cloud Foundations and Archietecture</bCISCO></p>
-            <p><b>ON GOING TO LEARNING</b> :- Full Stack</bCISCO></p>
-            </section>
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <p>📱-6300244484</p>
-                <p>📧-nelapatiabhi12345678@gmail.com</p>
-            </section>
-
-
-            <footer>
-                <h4>&copy; My PortFolio 2024 . All Rights Reserved.</h4>
-            </footer>
-    </main>
+<body>
+    <center>
+    <div class="box">
+    <div class="subbox">
+    <h2><u>CALCULATOR</u></h2>
+    <input type="text" id="result" readonly><br>
+    <br>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: #7cd5e5;
+            font-family: dosis, sans-serif;
+        }
+        h2 {
+            font-size: 20px;
+            top: 13%;
+            left: 45%;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: inter, sans-serif;
+        }
+        input {
+            background: #caccce;
+            width: 230px;
+            padding: 10px;
+            margin: 10px 0%;
+            border-radius: 5px;
+            font-size: 20px;
+            font-family: comic neue, cursive;
+            border: none;
+            font-weight: bolder;
+        }
+        .box {
+            border: 10px solid #2d354a;
+            width: 290px;
+            height: 420px;
+            position: fixed;
+            border-radius: 10px;
+            left: 38%;
+            top: 10%;
+            box-shadow: 2px 4px 20px;
+            background: #2d354a;
+        }
+        .subbox {
+            margin: 35px 7%;
+        }
+        table > td {
+            width: 50px;
+            height: 70px;
+            border-radius: 60px;
+            font-size: 20px;
+            border: none;
+            border-bottom: none;
+            box-shadow: 5px 0px 8px 2px #191919;
+            background: white;
+            color: #2d354a;
+            cursor: pointer;
+            font-family: comic neue, cursive;
+            font-weight: bolder;
+            outline: none;
+        }
+        button {
+            justify-content: space-between;
+            width: 60px;
+            height: 50px;
+            border-radius: 80px;
+            font-size: 20px;
+            border: none;
+            border-bottom: none;
+            box-shadow: 5px 0px 8px 2px #191919;
+            background: white;
+            color: #2d354a;
+            cursor: pointer;
+            font-family: comic neue, cursive;
+            font-weight: bolder;
+            outline: none;
+            margin: 1.25px;
+        }
+        table > td > symbol > setoperator {
+            background: #1376da;
+        }
+    </style>
+    <table>
+        <tr>
+            <td><button onclick="clearresult()">C</button></td>
+            <td><button onclick="back()">Del</button></td>
+            <td><button onclick="setoperator('%')">%</button></td>
+            <td><button onclick="setoperator('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendNumber(7)">7</button></td>
+            <td><button onclick="appendNumber(8)">8</button></td>
+            <td><button onclick="appendNumber(9)">9</button></td>
+            <td><button onclick="setoperator('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendNumber(6)">6</button></td>
+            <td><button onclick="appendNumber(5)">5</button></td>
+            <td><button onclick="appendNumber(4)">4</button></td>
+            <td><button onclick="setoperator('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendNumber(1)">1</button></td>
+            <td><button onclick="appendNumber(2)">2</button></td>
+            <td><button onclick="appendNumber(3)">3</button></td>
+            <td><button onclick="setoperator('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendNumber('00')">00</button></td>
+            <td><button onclick="appendNumber(0)">0</button></td>
+            <td><button onclick="setoperator('.')">.</button></td>
+            <td><button onclick="calculate()">=</button></td>
+        </tr>
+    </table>
+</div>
+</center>
 </body>
+<script src="calculator.js"></script>
 </html>
